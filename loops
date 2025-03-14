@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULLDOZER LOOPS</title>
+</head>
+<body>
+    <h2>BULLDOZER IN LOOPS</h2>
+    <h3>using loops to form a function that uses a bulldozer to form quadratic equations.</h3>
+    <script>
+        console.log('hello this is how to make it happen')
+        function bulldozerquadratic(a,b,c){
+            let solutions = []
+            for( let x = -100; x < 100; x++){
+                let results = a * x * x + b * x + c;
+                if( results === 0){
+                    solutions.push(x);
+                }
+            }
+            return solutions.length > 0?
+            solutions : "no solutions found";
+        }
+        console.log(bulldozerquadratic(1,0,-1));
+    </script>
+</body>
+</html>
